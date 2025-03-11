@@ -1,0 +1,68 @@
+    .hero {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url("../public/images/hero6.webp") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    
+    /* Hero Content Box */
+    .hero-content {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 40px 60px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 600px;
+    }
+    
+    /* Hero Title */
+    .hero-content h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    /* Hero Subtitle */
+    .hero-content p {
+        font-size: 0.7rem;
+        color: #555;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero-content {
+            padding: 30px 40px;
+            max-width: 90%;
+        }
+        
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+        
+        .hero-content p {
+            font-size: 1rem;
+        }
+    }
+    /* Cursor blinking effect */
+@keyframes blink {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+.typewriter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    border-right: 4px solid white; /* Cursor effect */
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
